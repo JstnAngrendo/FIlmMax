@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Justin Blog | {{ $title }}</title>
+    <title>FilmMax</title>
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     {{-- Boostrap Icons --}}
@@ -11,10 +11,54 @@
 
     {{-- My Style --}}
     <link rel="stylesheet" href="/css/style.css">
+
+    <style>
+
+    </style>
   </head>
-  <body>
+  <body>    
+    {{-- @include('partials.navbar') --}}
+
+    <style>
+      html{
+        text-decoration: none;
+      }
+
+      body{
+        /* background-color: #000000; */
+        /* color: #ffffff; */
+      }
+      
+      header{
+        position: fixed;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 2rem 0;
+        background-color: #000000;
+      }
+      
+      nav{
+
+      }
+      
+    </style>
+
+    <header>
+      <div class="logo">
+        <h3 style="color: white">Film<span style="#D4AF37">Max</span></h3>
+      </div>
+      <div class="search">
+        
+      </div>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/genre">Genre</a>
+        <a href="/wishlist">Wishlist</a>
+      </nav>
+    </header>
     
-    @include('partials.navbar')
 
     <div class="container mt-4">
         @yield('container')
